@@ -7,8 +7,6 @@
 #ifndef ThiagoRoberto20201160044_h
 #define ThiagoRoberto20201160044_h
 
-int somar(int x, int y); //função utilizada para testes
-int fatorial(int x); //função utilizada para testes
 int q1(char *data);
 int q2(char *datainicial, char *datafinal, int *qtdDias, int *qtdMeses, int *qtdAnos);
 int q3(char *texto, char c, int isCaseSensitive);
