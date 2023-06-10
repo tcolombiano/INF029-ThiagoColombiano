@@ -1,8 +1,11 @@
 #include <stdio.h>
 #include <string.h>
 
+//renomeie o arquivo do include abaixo para PrimeiroUltimoNomeMATRICULA.h
 #include "ThiagoRoberto20201160044.h"
 
+void testSomar();    //função utilizada para testes
+void testFatorial(); //função utilizada para testes
 void testQ1();
 void testQ2();
 void testQ3();
@@ -12,18 +15,36 @@ void testQ6();
 
 int main()
 {
-    
-    testQ1();
-    testQ2();
-    testQ3();
-    testQ4();
-    testQ5();
-    testQ6();
+    //testSomar();
+    //testFatorial();
+    //testQ1();
+    //testQ2();
+    //testQ3();
+    //testQ4();
+    //testQ5();
+    //testQ6();
+}
+
+void testSomar()
+{
+    printf("%d\n", somar(3, 4) == 7);
+    printf("%d\n", somar(-1, -3) == -4);
+    printf("%d\n", somar(-6, 6) == 0);
+    printf("%d\n", somar(74, 9) == 83);
+    printf("%d\n", somar(30, -9) == 21);
+    printf("%d\n", somar(-2, 8) == 6);
+
+}
+
+void testFatorial()
+{
+    printf("%d\n", fatorial(3) == 6);
+    printf("%d\n", fatorial(1) == 1);
+    printf("%d\n", fatorial(5) == 120);
 }
 
 void testQ1()
 {
-    printf("RESULTADO Q1 \n");
     char str[11];
     strcpy(str, "29/02/2015");
     printf("%d\n", q1(str) == 0);
@@ -48,7 +69,6 @@ void testQ2()
     qtdMeses = -1;
     qtdAnos = -1;
 
-    printf("RESULTADO Q2 \n");
     strcpy(datainicial, "01/06/2015");
     strcpy(datafinal, "01/06/2016");
     retorno = q2(datainicial, datafinal, &qtdDias, &qtdMeses, &qtdAnos);
@@ -93,7 +113,6 @@ void testQ2()
 
 void testQ3()
 {
-    printf("RESULTADO Q3 \n");
     char str[250];
     strcpy(str, "Renato Lima Novais");
     printf("%d\n", q3(str, 'a', 0) == 3);
@@ -113,7 +132,6 @@ void testQ4()
     {
         posicoes[i] = -1;
     }
-    printf("RESULTADO Q4 \n");
     strcpy(strTexto, "Laboratorio de programacao: para ratos de programação");
     strcpy(strBusca, "rato");
     printf("%d\n", q4(strTexto, strBusca, posicoes) == 2);
@@ -139,7 +157,6 @@ void testQ4()
 
 void testQ5()
 {
-    printf("RESULTADO Q5 \n");
     printf("%d\n", q5(345) == 543);
     printf("%d\n", q5(78) == 87);
     printf("%d\n", q5(3) == 3);
@@ -149,7 +166,6 @@ void testQ5()
 
 void testQ6()
 {
-    printf("RESULTADO Q6 \n");
     printf("%d\n", q6(34567368, 3) == 2);
     printf("%d\n", q6(34567368, 4576) == 0);
     printf("%d\n", q6(3539343, 3) == 4);

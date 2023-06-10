@@ -13,48 +13,48 @@ void testeExcluirNumeroEspecifico();
 void testeListar();
 void testeRetornarTodosNumeros();
 void testeMudarTamanhoEstrutura();
-//void testeListaEncadeada();
+void testeListaEncadeada();
 
 int main()
 {
-    inicializar();
-    testeInserirSemNada();
-    testeCriarEstrutura();
-    testeInserirComEstrutura();
-    testeExcluir();
-    testeExcluirNumeroEspecifico();
-    testeListar();
-    testeRetornarTodosNumeros();
-    testeMudarTamanhoEstrutura();
-    //testeListaEncadeada();
-    finalizar();
+  inicializar();
+  testeInserirSemNada();
+  testeCriarEstrutura();
+  testeInserirComEstrutura();
+  testeExcluir();
+  testeExcluirNumeroEspecifico();
+  testeListar();
+  testeRetornarTodosNumeros();
+  // testeMudarTamanhoEstrutura();
+  // testeListaEncadeada();
+  finalizar();
 }
 int ligado = 1;
 void show_log(char *str)
 {
-    if (ligado)
-        printf("###%s###\n", str);
+  if (ligado)
+      printf("###%s###\n", str);
 }
 
 void testeInserirSemNada()
 {
-    show_log("testeInserirSemNada()");
-    printf("%d\n", inserirNumeroEmEstrutura(2, 2) == SEM_ESTRUTURA_AUXILIAR);
-    printf("%d\n", inserirNumeroEmEstrutura(-2, 2) == POSICAO_INVALIDA);
-    printf("%d\n", inserirNumeroEmEstrutura(0, 2) == POSICAO_INVALIDA);
-    printf("%d\n", inserirNumeroEmEstrutura(11, 2) == POSICAO_INVALIDA);
+  show_log("testeInserirSemNada()");
+  printf("%d\n", inserirNumeroEmEstrutura(2, 2) == SEM_ESTRUTURA_AUXILIAR);
+  printf("%d\n", inserirNumeroEmEstrutura(-2, 2) == POSICAO_INVALIDA);
+  printf("%d\n", inserirNumeroEmEstrutura(0, 2) == POSICAO_INVALIDA);
+  printf("%d\n", inserirNumeroEmEstrutura(11, 2) == POSICAO_INVALIDA);
 }
 
 void testeCriarEstrutura()
 {
-    show_log("testeCriarEstrutura()");
-    printf("%d\n", criarEstruturaAuxiliar(-2, 5) == POSICAO_INVALIDA);
-    printf("%d\n", criarEstruturaAuxiliar(0, 5) == POSICAO_INVALIDA);
-    printf("%d\n", criarEstruturaAuxiliar(11, 5) == POSICAO_INVALIDA);
-    printf("%d\n", criarEstruturaAuxiliar(2, -5) == TAMANHO_INVALIDO);
-    printf("%d\n", criarEstruturaAuxiliar(2, 0) == TAMANHO_INVALIDO);
-    printf("%d\n", criarEstruturaAuxiliar(2, 3) == SUCESSO);
-    printf("%d\n", criarEstruturaAuxiliar(2, 6) == JA_TEM_ESTRUTURA_AUXILIAR);
+  show_log("testeCriarEstrutura()");
+  printf("%d\n", criarEstruturaAuxiliar(-2, 5) == POSICAO_INVALIDA);
+  printf("%d\n", criarEstruturaAuxiliar(0, 5) == POSICAO_INVALIDA);
+  printf("%d\n", criarEstruturaAuxiliar(11, 5) == POSICAO_INVALIDA);
+  printf("%d\n", criarEstruturaAuxiliar(2, -5) == TAMANHO_INVALIDO);
+  printf("%d\n", criarEstruturaAuxiliar(2, 0) == TAMANHO_INVALIDO);
+  printf("%d\n", criarEstruturaAuxiliar(2, 3) == SUCESSO);
+  printf("%d\n", criarEstruturaAuxiliar(2, 6) == JA_TEM_ESTRUTURA_AUXILIAR);
 }
 /*
 2 [ , , ]
@@ -62,12 +62,11 @@ void testeCriarEstrutura()
 
 void testeInserirComEstrutura()
 {
-    show_log("testeInserirComEstrutura()");
-    //###  int inserirNumeroEmEstrutura(int valor, int posicao); ###
-    printf("%d\n", inserirNumeroEmEstrutura(2, 4) == SUCESSO);
-    printf("%d\n", inserirNumeroEmEstrutura(2, -2) == SUCESSO);
-    printf("%d\n", inserirNumeroEmEstrutura(2, 6) == SUCESSO);
-    printf("%d\n", inserirNumeroEmEstrutura(2, 5) == SEM_ESPACO);
+  show_log("testeInserirComEstrutura()");
+  printf("%d\n", inserirNumeroEmEstrutura(2, 4) == SUCESSO);
+  printf("%d\n", inserirNumeroEmEstrutura(2, -2) == SUCESSO);
+  printf("%d\n", inserirNumeroEmEstrutura(2, 6) == SUCESSO);
+  printf("%d\n", inserirNumeroEmEstrutura(2, 5) == SEM_ESPACO);
 }
 /*
 2 [4,-2,6]
@@ -156,7 +155,6 @@ void testeRetornarTodosNumeros()
 */
 
     printf("%d\n", criarEstruturaAuxiliar(5, 10) == SUCESSO);
-
     printf("%d\n", inserirNumeroEmEstrutura(5, 1) == SUCESSO);
     printf("%d\n", inserirNumeroEmEstrutura(5, 34) == SUCESSO);
     printf("%d\n", inserirNumeroEmEstrutura(5, 12) == SUCESSO);
@@ -216,6 +214,7 @@ void testeRetornarTodosNumeros()
 int modificarTamanhoEstruturaAuxiliar(int posicao, int novoTamanho);
 Objetivo: modificar o tamanho da estrutura auxiliar da posição 'posicao' para o novo tamanho 'novoTamanho' + tamanho atual
 Suponha o tamanho inicial = x, e novo tamanho = n. O tamanho resultante deve ser x + n. Sendo que x + n deve ser sempre >= 1
+
 Rertono (int)
     SUCESSO - foi modificado corretamente o tamanho da estrutura auxiliar
     SEM_ESTRUTURA_AUXILIAR - Não tem estrutura auxiliar
@@ -256,7 +255,7 @@ void testeMudarTamanhoEstrutura()
 5 [1,34,12,6,27,-6, , , , ]
 */
 
-/*void testeListaEncadeada()
+void testeListaEncadeada()
 {
     show_log("testeListaEncadeada()");
     int vet[10];
@@ -277,4 +276,4 @@ void testeMudarTamanhoEstrutura()
     destruirListaEncadeadaComCabecote(&inicio);
 
     printf("%d\n", inicio == NULL);
-}*/
+}
