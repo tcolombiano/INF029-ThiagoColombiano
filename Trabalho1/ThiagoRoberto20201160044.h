@@ -1,4 +1,5 @@
 // #################################################
+//  Versão Final
 //  Instituto Federal da Bahia
 //  Salvador - BA
 //  Curso de Análise e Desenvolvimento de Sistemas http://ads.ifba.edu.br
@@ -8,17 +9,20 @@
 //  ----- Orientações gerais -----
 //  Descrição: esse arquivo deve conter as questões do trabalho do aluno.
 //  Cada aluno deve renomear esse arquivo para Aluno<MATRICULA>.c
-//  O aluno deve preencher seus dados abaixo, e implementar as questões do trabalho
+//  O aluno deve preencher seus dados abaixo, e implementar as questões do
+//  trabalho
 
-/*Nome: Thiago Roberto ~~Email: thiagocolombiano32@gmail.com ~~  Matrícula: 20201160044 ~~  Semestre: 2 */
+/*Nome: Thiago Roberto ~~Email: thiagocolombiano32@gmail.com ~~  Matrícula:
+ * 20201160044 ~~  Semestre: 2 */
 // Copyright © 2016 Renato Novais. All rights reserved.
 // Última atualização: 12/12/2017
 // #################################################
 
-int somar(int x, int y); //função utilizada para testes
-int fatorial(int x); //função utilizada para testes
+int somar(int x, int y); // função utilizada para testes
+int fatorial(int x);     // função utilizada para testes
 int q1(char *data);
-int q2(char *datainicial, char *datafinal, int *qtdDias, int *qtdMeses, int *qtdAnos);
+int q2(char *datainicial, char *datafinal, int *qtdDias, int *qtdMeses,
+       int *qtdAnos);
 int q3(char *texto, char c, int isCaseSensitive);
 int q4(char *strTexto, char *strBusca, int posicoes[30]);
 int q5(int num);
