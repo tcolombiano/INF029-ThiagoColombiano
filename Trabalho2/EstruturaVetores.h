@@ -45,4 +45,4 @@ void finalizar();
 void dobrar(int *x);
 
 #endif // TRABALHO2_ESTRUTURAVETORES_H
-       // Commit Versão Final R01
+       // Commit Versão Final R02

@@ -278,4 +278,4 @@ void testeListaEncadeada() {
 
   printf("%d\n", inicio == NULL);
 }
-// Commit Versão Final R01
+// Commit Versão Final R02

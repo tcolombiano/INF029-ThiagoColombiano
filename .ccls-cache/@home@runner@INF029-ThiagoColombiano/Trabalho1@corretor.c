@@ -208,4 +208,4 @@ void testQ6() {
   printf("%d\n", q6(3333, 3) == 4);
 }
 
-// Commit Versão Final R01
+// Commit Versão Final R02
