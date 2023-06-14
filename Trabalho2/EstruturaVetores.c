@@ -587,4 +587,4 @@ para poder liberar todos os espaços de memória das estruturas auxiliares.
 
 void finalizar() { free(vetorPrincipal[TAM]); }
 
-// Commit Versão Final R02
+// Commit Versão Final R03
